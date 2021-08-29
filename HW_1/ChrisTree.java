@@ -15,6 +15,9 @@ public class ChrisTree {
         input[0] = scan.nextInt();
         System.out.print("How many segments do you want: ");
         input[1] = scan.nextInt();
+
+        scan.close();
+        
         return input;
     }
     

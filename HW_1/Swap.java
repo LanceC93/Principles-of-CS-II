@@ -18,6 +18,8 @@ public class Swap {
         System.out.print("Input a string for swapping: ");
         String stringInput = userInput.next();
         System.out.println(swapLetterPairs(stringInput));
+
+        userInput.close();
     }
     public static int swapDigitPairs(int num) {
         int swappedNum = 0;
