@@ -8,6 +8,7 @@ public class RepeatedDigits {
         Scanner console = new Scanner(System.in);
         System.out.print("Enter a number: ");
         long input = console.nextLong();
+        console.close();
 
         int[] occurences = countDigits(input);
         printOccurences(occurences);

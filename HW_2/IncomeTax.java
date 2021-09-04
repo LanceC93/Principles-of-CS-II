@@ -10,6 +10,7 @@ public class IncomeTax {
         //creates random int in the range 1-15
         int randInt = (int)((Math.random() * 14) + 1);
         String maxPeople = displayTax(randInt, console);
+        console.close();
         printMaxes(maxPeople);
     }
     //asks for income, displays amount of tax, and determines people with the maximum tax
