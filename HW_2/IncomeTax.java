@@ -1,4 +1,4 @@
-//Name: Lance Cross Date: 9/6/21
+//Name: Lance Cross Date: 9/6/21 ID: 002634761
 //This program generates a random number of people from 1-15.
 //Then, it asks the user for input for each person and displays there taxes
 //Finally, it displays the people with the highest values of taxes

@@ -1,4 +1,4 @@
-//Name: Lance Cross Date: 9/6/21
+//Name: Lance Cross Date: 9/6/21 ID: 002634761
 //This program gets a number from the user and counts how many times each digit repeats
 import java.util.Scanner;
 
