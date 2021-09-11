@@ -5,6 +5,7 @@ public class Multiplication {
     public static void main(String[] args) {
         System.out.println(multiply(5,2));
     }
+    //multiplys int a and b using recursive addition
     public static int multiply(int a, int b) {
         if(b != 1) {
             a += multiply(a,b-1);
