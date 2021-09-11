@@ -27,11 +27,11 @@ public class IncomeTax {
             //determines tax margin
             if(tax < 750) {
                 tax *= .01;
-            } else if(750 < tax && tax < 2500) {
+            } else if(tax < 2500) {
                 tax = 7.5 + ((.02 * tax) / 750);
-            } else if(2500 < tax && tax < 5000) {
+            } else if(tax < 5000) {
                 tax = 82.5 + ((.04 * tax) / 2500);
-            } else if(5000 < tax && tax < 8000) {
+            } else if(tax < 8000) {
                 tax = 142.5 + ((.05 * tax) / 5000);
             } else {
                 tax = 230 + ((.06 * tax) / 8000);
