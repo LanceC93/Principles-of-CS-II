@@ -3,7 +3,9 @@
 //The main contains 3 examples of its execution
 public class Multiplication {
     public static void main(String[] args) {
-        System.out.println(multiply(5,2));
+        System.out.println("5 x 2 = " + multiply(5,2));
+        System.out.println("10 x 30 = " + multiply(10,30));
+        System.out.println("3 x 12 = " + multiply(3,12));
     }
     //multiplys int a and b using recursive addition
     public static int multiply(int a, int b) {

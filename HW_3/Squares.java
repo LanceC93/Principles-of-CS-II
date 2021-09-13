@@ -6,6 +6,10 @@
 public class Squares {
     public static void main(String[] args) {
         writeSquares(4);
+        System.out.println();
+        writeSquares(11);
+        System.out.println();
+        writeSquares(25);
     }
     //writes descending even squares and ascending odd squares below n
     public static void writeSquares(int n) {
