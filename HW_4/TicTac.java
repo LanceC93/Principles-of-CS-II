@@ -19,6 +19,12 @@ public class TicTac {
             }
             printboard(board);
         } while(checkWinner(board, turn));
+        if(turn == 9) {
+            System.out.println("It was a draw.");
+        } else {
+            System.out.println("We have a winner.");
+        }
+        console.close();
     }
     //prints welcome message and the initial board
     public static void welcome(char[][] board) {
@@ -44,6 +50,22 @@ public class TicTac {
     }
     //checks the arrays to see if there is a winner
     public static boolean checkWinner(char[][] board, int turn) {
-        return turn != 6;
+        //checks for the up and down line wins
+        for(int i = 0; i <= 2; i ++) {
+            if(board[i][0] == board[i][1] && board[i][0] == board[i][2] && (board[i][0] == 'x' || board[i][0] == 'o')) {
+                return false;
+            } else if(board[0][i] == board[1][i] && board[0][i] == board[2][i] && (board[0][i] == 'x' || board[0][i] == 'o')) {
+                return false;
+            }
+        }
+        //checks for diagonals and draws
+        if(board[0][0] == board[1][1] && board[0][0] == board[2][2] && (board[0][0] == 'x' || board[0][0] == 'o')) {
+            return false;
+        } else if(board[0][2] == board[1][1] && board[0][2] == board[2][0] && (board[0][2] == 'x' || board[0][2] == 'o')) {
+            return false;
+        } else if(turn == 9) {
+            return false;
+        }
+        return true;
     }
 }
