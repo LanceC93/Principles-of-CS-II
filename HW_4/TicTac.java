@@ -5,10 +5,12 @@ import java.util.Scanner;
 public class TicTac {
     public static void main(String[] args) {
         Scanner console = new Scanner(System.in);
+        //stores values on the tictactoe board
         char[][] board = {{'-', '-','-'}, {'-', '-','-'}, {'-', '-','-'}};
         int[] input = new int[2];
         welcome(board);
         int turn = 0;
+        //keeps playing until the game is over
         do {
             turn ++;
             input = getInput(console);
@@ -19,6 +21,7 @@ public class TicTac {
             }
             printboard(board);
         } while(checkWinner(board, turn));
+        //prints if there was a winner or not
         if(turn == 9) {
             System.out.println("It was a draw.");
         } else {
