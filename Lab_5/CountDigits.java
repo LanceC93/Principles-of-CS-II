@@ -17,6 +17,7 @@ public class CountDigits {
     public static int countDigit(int num) {
         //stores digits
         int numDigits = 0;
+        //counts the number of digits in num
         while(num > 0) {
             numDigits++;
             num /= 10;
