@@ -4,9 +4,12 @@ import java.awt.*;
 
 public class Picture {
     public static void main(String[] args) {
+        //creates objects necessary for making graphics
         DrawingPanel canvas = new DrawingPanel(400, 400);
         Graphics g = canvas.getGraphics();
+        //makes background CYAN
         canvas.setBackground(Color.CYAN);
+        //prints each box
         createBox(0, 0, 100, 100, 5, 1, g, canvas);
         createBox(10, 120, 24, 24, 4, 5, g, canvas);
         createBox(150, 20, 40, 40, 5, 6, g, canvas);
@@ -15,7 +18,9 @@ public class Picture {
     //creates the box of circles with given properties
     public static void createBox(int x, int y, int width, int height, int circles, int numRows, Graphics g, DrawingPanel canvas) {
         int origX = x;
+        //prints each row of boxes
         for(int i = 0; i < numRows; i++) {
+            //prints each column in each row
             for(int j = 0; j < numRows; j++) {
                 g.setColor(Color.GREEN);
                 g.fillRect(x, y, width, height);
