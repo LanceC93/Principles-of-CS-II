@@ -5,13 +5,13 @@ public class ISBN
     private String digits;
     private String checkSymbol;
 
-    //constructs a new ISBN with the given fields
+    //constructs a new ISBN
     public ISBN(String digits, String checkSymbol) {
         this.digits = digits;
         this.checkSymbol = checkSymbol;
     }
 
-    // getter/accessors that returns the fields' values
+    //gets ISBN fields
     public String getDigits() {
         return digits;
     }
@@ -20,10 +20,7 @@ public class ISBN
         return checkSymbol;
     }
 
-    //returns true if the ISBN is valid else returns false. You will
-    //need to extract each digit to calculate checksum. You can use
-    //charAt or substring methods then convert them to integer and
-    //The algorithm to generate the checksum is given below.
+    //returns true if the ISBN is valid, returns false if it isnt
     public boolean isValid() {
         int sum = 0;
         //checks if the digits are the right length
@@ -48,7 +45,6 @@ public class ISBN
     }
 
     // returns the string representation of the ISBN
-    // ISBN should be printed in correct format eg: 0-13-394302-X.
     public String toString() {
         return getDigits().charAt(0) + "-" + getDigits().substring(1,3) + "-" + getDigits().substring(3) + "-" + getCheckSymbol();
     }
