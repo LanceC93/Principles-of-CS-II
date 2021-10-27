@@ -5,7 +5,7 @@ public class AdvanceTicket extends Ticket{
     //represents days in advance it is purchased
     private int days;
     
-    //constructs advanced ticket with num and number of days
+    //constructs advance ticket with num and number of days
     public AdvanceTicket(int num, int days) {
         super(num);
         this.days = days;
