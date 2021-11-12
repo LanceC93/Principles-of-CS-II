@@ -1,4 +1,4 @@
-//Name: Lance Cross Date: 10/19/21 ID: 002634761
+//Name: Lance Cross Date: 10/26/21 ID: 002634761
 //multiplies an array of fractions together
 import java.util.*;
 
